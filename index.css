@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outfit-bold{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.outfit-medium{
+    font-weight:normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.outfit-ligth{
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portifolio .container-nav{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+}
+.portifolio .container-nav .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.portifolio .container-nav .nav .informacoes a{
+    font-size: 1.2rem;
+    padding-right: 30px;
+}
+.portifolio .container-gif{
+    width: 100%;
+    position: relative;
+}
+.portifolio .container-gif .gif .imagem{
+    width: 100%;
+    filter: brightness(0.10);
+}
+.portifolio .container-gif .gif .sobre-mim{
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    width: 100%;
+}
+.portifolio .container-gif .gif .sobre-mim .informacoes-sobre{
+    display: flex;
+    justify-content: space-around;
+}
+.portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto {
+    padding: 200px 10px;
+    width: 50%;
+}
+.portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto H1{
+    color: white;
+    text-align: center;
+    font-size: 3.3rem;
+}
+.portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto .texto-sobre p{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.4rem;
+}
+.line {
+    position: relative;
+    width: 0px;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+.portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto H2{
+    color: white;
+    animation: typewriter 4s steps(42) 500ms infinite,
+    blinkTextCursor 500ms steps(42) infinite normal;
+}
+@keyframes typewriter {
+    0% {
+          width: 0px;
+    }
+    10% {
+          width: 0px;
+    }
+    25% {
+          width: 67%;
+    }
+    75% {
+          width: 67%;
+    }
+    90% {
+          width: 0px;
+    }
+    100% {
+          width: 0px;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
