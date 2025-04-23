@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    /* background-color: black; */
+}
 .outfit-bold{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,6 +39,7 @@
 .portifolio .container-gif .gif .imagem{
     width: 100%;
     filter: brightness(0.10);
+    min-height: 100vh;
 }
 .portifolio .container-gif .gif .sobre-mim{
     position: absolute;
@@ -101,5 +105,40 @@
     }
     to {
           border-right-color: transparent;
+    }
+}
+
+
+
+
+
+
+@media (max-width:1158px){
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto {
+        width: 77%;
+    }
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto H1 {
+        font-size: 2.6rem;
+    }
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto .texto-sobre p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:500px){
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto H1 {
+        font-size: 1.7rem;
+    }
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto {
+        padding: 30PX 20px;
+        width: 100%;
+    }
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto .texto-sobre p {
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 1rem;
+    }
+    .portifolio .container-gif .gif .sobre-mim .informacoes-sobre .texto H2 {
+        font-size: 15px;
     }
 }
